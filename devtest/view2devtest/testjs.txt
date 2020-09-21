@@ -1,0 +1,26 @@
+// 1. Code runs as you type: edit message
+let msg = 'hello world'
+
+// 2. Files import automatically: uncomment this
+// msg = capitalize(msg)
+
+// $('#header')
+//   .html(msg)
+//   // 3. Smart autocomplete: type .fadeIn('slow')
+//   // after .fadeOut('slow')
+//   .fadeOut(1000)
+function ClickButton(){
+var str = '';
+  var name = document.getElementById("name").value;
+  var age = document.getElementById("age").value;
+  //str = '{'+'"'+name+'"'+':'+'"'+age+'"'+'}';
+  str = '{'
+    +'\"name\"' + ':' + '\"' + name + '\"' + ','
+    +'\"age\"'  + ':' + '\"' + age  + '\"'
+    +'}';
+  var jSonStr = JSON.parse(str);
+  console.log({ jSonStr: jSonStr });
+  console.log({ str: str });
+  console.log({ str:  jSonStr.name});
+}
+  
